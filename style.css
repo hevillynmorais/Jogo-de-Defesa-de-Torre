@@ -1,0 +1,48 @@
+body {
+    margin: 0;
+    overflow: hidden; /* Esconde as barras de rolagem */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #222; /* Fundo escuro */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #eee;
+}
+
+#game-container {
+    position: relative;
+    border: 2px solid #555;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.7);
+    overflow: hidden; /* Garante que nada saia do container */
+}
+
+#gameCanvas {
+    background-color: #000; /* Fundo do jogo */
+    display: block; /* Remove espaço extra abaixo do canvas */
+}
+
+#hud {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 8px 12px;
+    border-radius: 5px;
+}
+
+#health-bar, #ki-bar {
+    font-size: 1.1em;
+    font-weight: bold;
+}
+
+#healthValue {
+    color: #e74c3c; /* Vermelho para vida */
+}
+
+#kiValue {
+    color: #3498db; /* Azul para Ki */
+}
